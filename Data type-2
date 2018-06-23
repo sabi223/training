@@ -1,0 +1,47 @@
+# Q1 find the lenght of tuples
+x=('a',1,2,'hello')
+len(x)
+4
+
+#Q2
+x=(1,2,3,4,5)
+max(x)
+5
+min(x)
+1
+
+
+#Q3
+ x=(1,2,3,4,5)
+ print(1*2*3*4*5)
+120
+
+#Q4
+x=input('enter 1st no.')
+enter 1st no.10
+y=input('enter 2md no')
+enter 2nd no20
+z=input('enter 3rd no.')
+enter 3rd no.30
+a=input('enter 4th no.')
+enter 4th no.40
+set([x,y,z,a])
+{'10', '40', '20', '30'}
+b=set([x,y,z,a])
+c=input('enter no')
+enter no20
+ d=input('enter other no')
+enter other no45
+q=set([c,d])
+print(b)
+{'10', '40', '20', '30'}
+print(q)
+{'45', '20'}
+b-q
+{'10', '40', '30'}
+b>q
+False
+q>b
+False
+print(b&q)
+{'20'}
