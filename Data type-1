@@ -1,0 +1,69 @@
+c=['a',1 ,'sabi', 'gupta']
+  print(c)
+['a', 1, 'sabi', 'gupta']
+
+c.append('google')
+c.append('facebook')
+c.append('tesla')
+c.append('apple')
+c.append('microsoft')
+ print(c)
+['a', 1, 'sabi', 'gupta', 'google', 'facebook', 'tesla', 'apple', 'microsoft']
+
+ c.count(1)
+1
+c.count('a')
+1
+c.count('sabi')
+1
+c.count('gupta')
+1
+c.count('google')
+1
+c.count('facebook')
+1
+c.count('tesla')
+1
+c.count('microsoft')
+1
+c.count('apple')
+1
+
+
+d=[34,67,56,88,44,66]
+d.sort()
+print(d)
+[34, 44, 56, 66, 67, 88]
+
+
+ a=[1,2,3,4,5]
+b=[7,8,9,0,10]
+c=a+b
+print(sorted(c))
+[0, 1, 2, 3, 4, 5, 7, 8, 9, 10]
+
+
+#Q6implementing stack
+a=[1,2,3,4,5]
+a.append(7) #7 is added at the end of list
+print(a)
+[1, 2, 3, 4, 5, 7]
+a.append(6) #6 is added at the end of list
+ print(a)
+[1, 2, 3, 4, 5, 7, 6]
+a.pop() #1 is removed from the end of list
+6
+print(a)
+[1, 2, 3, 4, 5, 7]
+# implementing queue
+b=[10,20,30,40,50]
+b.append(1)   #1 is added at the end of list
+print(b)
+[10, 20, 30, 40, 50, 1]
+b.append(6) #6 is added at the end of list
+print(b)
+[10, 20, 30, 40, 50, 1, 6]
+b.pop(0)  #10 is removed from  the front of list
+10
+print(b)
+[20, 30, 40, 50, 1, 6]
