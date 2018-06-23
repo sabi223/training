@@ -1,0 +1,46 @@
+#Q1
+import time
+time.time()
+1528968547.551559
+
+
+#Q2
+time.ctime(1528968547.551559)
+'Thu Jun 14 14:59:07 2018'
+
+#Q3
+time.time()
+1528969601.9843545
+>>> time.gmtime(1528969601.9843545)
+time.struct_time(tm_year=2018, tm_mon=6, tm_mday=14, tm_hour=9, tm_min=46, tm_sec=41, tm_wday=3, tm_yday=165, tm_isdst=0)
+
+#Q4
+d = datetime.date.today()
+>>> d.day
+14
+
+#Q5
+from datetime import datetime
+>>> current_time = datetime.now
+print("%s-%s-%s"%(current_time.day, current_time.month ,current_time.year,))
+14-6-2018
+
+#Q7
+import math
+>>> a=int(input('enter a no.'))
+enter a no.5
+>>>math.factorial(a)
+
+
+#Q8
+a=int(input('enter first no.'))
+enter first no.8
+>>> b=int(input('enter second no.'))
+enter second no.12
+>>> math.gcd(a,b)
+4
+
+#Q9
+ import os
+>>> os.getcwd()
+'C:\\Users\\Dell'
