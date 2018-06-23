@@ -1,0 +1,62 @@
+#Question 1
+year = int(input("Enter year to be checked:"))
+if (year % 4 == 0 and year % 100 != 0 or year % 400 == 0):  # To check if input is leap year or not
+        print("The year is a leap year!")
+else:
+        print("The year isn't a leap year!")
+
+#other way /though wrong for this particular question
+import calendar
+print(calendar.isleap(2015))
+
+#Question 2
+length = int(input('Please Enter the length of a Rectangle: '))
+breadth = int(input('Please Enter the breadth of a Rectangle: '))
+if (length == breadth):
+    print(' is a square') #as for square all sides are equal
+else:
+    print(' is a rectangle')  #and 1 pair of sides is same out of 2 for a shape to be rectangle
+
+#Question 3
+# Take the input age of 3 people and determine oldest and youngest among them
+first=int(input("enter the first person age:"))
+second=int(input("enter the  second person age:"))
+third=int(input("enter the third person age:"))
+if (first >= second and first >= third):
+  print ("Oldest is first")
+elif (second >= first and second >= third):
+  print ("Oldest is second")
+elif (third >= first and third >= second):
+  print ("Oldest is third")
+
+if (first <= second and first <= third):
+  print ("youngest is first")
+elif (second <= first and second <= third):
+  print ("youngest is second")
+elif (third <= first and third <= second):
+  print ("youngest is third")
+
+#Question 4
+points = int(input("enter points to know your prize :"))
+if (points <= 200):
+    if (points <= 50 and points >= 1):
+        print("Sorry! No prize this time")
+    elif (points <= 150 and points >= 51):
+        print("Congratulations! You won a Wooden Dog!")
+    elif (points <= 180 and points >= 151):
+        print("Congratulations! You Won a Book!")
+    elif (points <= 200 and points >= 181):
+        print("Congratulations! You won a Chocolates")
+    elif (points <= 0):
+        print("invalid value")
+else:
+    print("limit exceeded")
+
+#Question 5
+quantity = int(input("enter the quantity you want:"))
+cost = 100*quantity
+if (cost>1000):
+    total_cost=cost-cost*10/100 #10% discount
+else:
+    total_cost=cost #no discount as cost is less than 1000
+print("the total cost is:%d" %(total_cost))
