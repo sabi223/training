@@ -1,0 +1,49 @@
+#Q1. Create a threading process such that it sleeps for 5 seconds and then prints out a message.
+import threading
+import time
+def thread():
+    print(threading.current_thread().getName(),'starting')
+    time.sleep(5)
+    print(threading.current_thread().getName(), 'ending')
+
+w1=threading.Thread(name='thread',target=thread)
+w1.start()
+
+
+#Q2. Make a thread that prints numbers from 1-10, waits for 1 sec between
+import threading
+import time
+def thread():
+    print(threading.current_thread().getName(),'starting')
+    for i in range(11):
+        print(i)
+        time.sleep(1)
+w1=threading.Thread(name='thread',target=thread)
+w1.start()
+
+
+#Q3. Make a list that has 5 elements.Create a threading process that prints the 5 elements of the list with a delay of multiple of 2 sec between each display.Delay goes like 2sec-4sec-6sec-8sec-10sec Q4. Call factorial function using thread.
+import threading
+import time
+list1=[1,2,3,4,5]
+def thread():
+    print(threading.current_thread().getName(),'starting')
+    for i in list1:
+        print(i,time.ctime(time.time()))
+        time.sleep(i*2)
+w1=threading.Thread(name='thread',target=thread)
+w1.start()
+
+#Q4. Call factorial function using thread.
+import threading
+import time
+def factorial(n):
+    if(n <= 1):
+        return 1
+    else:
+        return(n*factorial(n-1))
+
+n = int(input("Enter number:"))
+print(factorial(n))
+w1=threading.Thread(name='thread',target=factorial)
+w1.start()
