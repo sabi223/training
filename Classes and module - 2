@@ -50,7 +50,7 @@ class cop:
 
 
 x=cop()
-x.add('nitesh',22,5,'manager')
+x.add('sabi',22,5,'manager')
 x.display()
 
 class mission(cop):
